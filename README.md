@@ -15,6 +15,9 @@ By default it will skip signing your mac application.
 You can simply compile your code by running `yarn production` or `yarn dev` as you wish, then running `yarn start` will
 start your electron app.
 
+Compiling your code will run laravel-mix commands and produce the required files at the `app` directory.
+
+
 ## Build your app
 
 You can run the command `yarn run build-it` which will compile your code and run the build process for you.
