@@ -3,7 +3,7 @@
 
 This app can be used as a starting point for you if you want to build a desktop app using electron.
 It is backed with:
-1. [Laravel-mix](https://laravel-mix.com).
+1. [Laravel-mix](https://laravel-mix.com)
 2. [Vuejs](http://vuejs.org/)
 3. [Electron build](https://www.electron.build)
 
