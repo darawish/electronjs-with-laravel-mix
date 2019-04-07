@@ -1,0 +1,59 @@
+{
+  "name": "laravel-mix-example",
+  "version": "1.0.0",
+  "description": "Example of using Laravel-mix outside Laravel with Electron APP  ",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run dev && electron .",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint --fix --ext .js,.vue resources/js/",
+    "postinstall": "install-app-deps",
+    "build-it": "yarn run production && yarn run build"
+  },
+  "build": {
+    "appId": "io.darawish.${name}",
+    "copyright": "Copyright © 2019 ${author}",
+    "files": [
+      "app/**/*",
+      "node_modules/**/*",
+      "main.js",
+      "package.json",
+      "!**/node_modules/.bin",
+      "!**/{.DS_Store,.git,.gitignore,.gitattributes}"
+    ],
+    "directories": {
+      "output" : "dist/${version}/${os}"
+    },
+    "mac": {
+      "identity": null
+    }
+  },
+  "author": {
+    "name": "Zaher Ghaibeh",
+    "email": "zaher@darawish.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^0.18",
+    "cross-env": "^5.1",
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0",
+    "electron-debug": "^2.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "laravel-mix": "^4.0.7",
+    "lodash": "^4.17.5",
+    "popper.js": "^1.12",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
