@@ -21,7 +21,8 @@ Compiling your code will run laravel-mix commands and produce the required files
 
 You can run the command `yarn run build-it` which will compile your code and run the build process for you.
 
-## NOTE:
+## NOTES:
 
-This is still a **work in progress** which means you may face some problems, it would be nice to share it with us.
-We only tested the code on Mac, so we are not sure if it will fully work on windows or linux.
+1. This is still a **work in progress** which means you may face some problems, it would be nice to share it with us.
+2. We only tested the code on Mac, so we are not sure if it will fully work on windows or linux.
+3. We use `Yarn` instead of `npm` but feel free to delete `yarn.lock` and use `npm`.

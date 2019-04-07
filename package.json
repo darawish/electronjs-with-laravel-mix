@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-example",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Example of using Laravel-mix outside Laravel with Electron APP  ",
   "main": "main.js",
   "scripts": {
